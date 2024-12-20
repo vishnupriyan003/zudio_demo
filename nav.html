@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        header{
+            background-color: white;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+        }
+        nav{
+            padding: 0%;
+            margin:0%;
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        #logo-container{
+            width: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #logo-container img{
+            width: 40%;
+        }
+        #search-container{
+            width: 60%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #search-container #search-box{
+            padding: 2px 2px 2px;
+            height: 90%;
+            width: 80%;
+        }
+        #search-container #icon{
+            height: 90%;
+            width: 10%;
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            align-items: center;
+        }
+        #search-container #search-box input{
+            height: 90%;
+            width: 100%;
+            font-size: 15px;
+        }
+        #menu-container{
+            width: 20%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #menu-container #home{
+            color: rgba(0, 0, 0, 0.5);
+        }
+        #menu-container #home:hover{
+            color: rgb(0, 0, 0);
+        }
+        #menu-container #login{
+            color: rgba(0, 0, 0, 0.5);
+        }
+        #menu-container #login:hover{
+            color: rgb(0, 0, 0);
+        }
+        body{
+            background-color: rgba(217, 249, 249, 0.89);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        main{
+            margin-top: 100px;
+            height: 450px;
+            width: 80%;
+            display: flex;
+            gap: 22.2px;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        main #product-card{
+            border: 1px solid;
+            height: 60%;
+            width: 15%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(180, 231, 192, 0.875);
+            transition-property: all;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+        }
+        main #product-card:hover{
+            transform: scale(1.05);
+        }
+        main #product-card .product-image{
+            height: 70%;
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        main #product-card .product-image img{
+            width: 100%;
+            height: 100%;
+        }
+        main #product-card .product-info{
+            height: 20%;
+            width: 83%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        main #product-card .product-info button{
+            font-size: 15px;
+            height: 40%;
+            width: 60%;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            transition-property: all;
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in-out;
+        }
+        main #product-card .product-info button:hover{
+            background-color: rgb(0, 64, 255);
+            color: rgb(229, 255, 0);
+        }
+    </style>
+</head>
+<body>    
+    <header>
+        <nav>
+            <div id="logo-container">
+                <img src="https://cdn.brandfetch.io/zudio.com/fallback/lettermark/theme/dark/h/256/w/256/icon?c=1bfwsmEH20zzEfSNTed" alt="logo">
+            </div>
+            <div id="search-container">
+                <span id="search-box">
+                    <input type="text" placeholder="search item">
+                </span>
+                <span id="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="25" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                </span>
+            </div>
+            <div id="menu-container">
+                <span id="home">Home</span>
+                <span id="login">Login</span>
+            </div>
+        </nav>
+    </header>
+    <!-- main -->
+    <main>
+        <div id="product-card">
+            <span class="product-image"><img src="https://freepngimg.com/thumb/tshirt/16-t-shirt-png-image.png"></span>
+            <span class="product-info">
+                <h3>T-Shrit</h3>
+                <button>view more</button>
+            </span>
+        </div>        
+        <div id="product-card">
+            <span class="product-image"><img src="https://www.seasonbazaar.com/wp-content/uploads/2019/08/2019-new-fashion-brand-men-s-shirt-denim-shirt-dress-shirt-long-sleeved-slim-men-s.jpg" alt="product image"></span>
+            <span class="product-info">
+                <h3>Shrit</h3>
+                <button>view more</button>
+            </span>
+        </div>        
+        <div id="product-card">
+            <span class="product-image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlpwRgzUco-jHFG73VI1wd11c2L8MLfPje9g&s" alt="product image"></span>
+            <span class="product-info">
+                <h3>Pant</h3>
+                <button>view more</button>
+            </span>
+        </div>        
+        <div id="product-card">
+            <span class="product-image"><img src="https://5.imimg.com/data5/VM/RJ/JP/SELLER-38711392/789-500x500.jpg" alt="product image"></span>
+            <span class="product-info">
+                <h3>Cotton Court</h3>
+                <button>view more</button>
+            </span>
+        </div>        
+        <div id="product-card">
+            <span class="product-image"><img src="https://www.ministerwhite.com/cdn/shop/products/ColorPlus_8_1800x1800.jpg?v=1672900952" alt="product image"></span>
+            <span class="product-info">
+                <h3>dhoti shirt combo</h3>
+                <button>view more</button>
+            </span>
+        </div>        
+        <div id="product-card">
+            <span class="product-image"><img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ixmPW30k9uL0/v0/1200x850.jpg" alt="product image"></span>
+            <span class="product-info">
+                <h3>Rolex Watch</h3>
+                <button>view more</button>
+            </span>
+        </div>        
+        <div id="product-card">
+            <span class="product-image"><img src="https://res.cloudinary.com/dmezmffej/image/upload/v1721388046/Frame_48098010_2_1.avif" alt="product image"></span>
+            <span class="product-info">
+                <h3>Gabit Smart Ring</h3>
+                <button>view more</button>
+            </span>
+        </div>        
+        <div id="product-card">
+            <span class="product-image"><img src="https://www.redwolf.in/image/cache/catalog/hoodies/marvel-upgraded-spider-suit-hoodie-india-600x800.jpg?m=1731041218" alt="product image"></span>
+            <span class="product-info">
+                <h3>Hoodies</h3>
+                <button>view more</button>
+            </span>
+        </div>        
+        <div id="product-card">
+            <span class="product-image"><img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQW7ttTqaA_U5A23CZ69_n0x07FDQBEjYH6AmPY4QDje2GtFkAxRuAfJ7ZMrp88ajSRYhBjo5ghzp4YFpsR3Vvw0nlGLtnlYLpNebAmokE2rBOZyGiAwvzTMd0" alt="product image"></span>
+            <span class="product-info">
+                <h3>Oxford Shoes</h3>
+                <button>view more</button>
+            </span>
+        </div>        
+        <div id="product-card">
+            <span class="product-image"><img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/2a46f8df367646f89f3422d71dae4ea8_9366/Kaptir_3.0_Shoes_Black_IG3542_01_standard.jpg" alt="product image"></span>
+            <span class="product-info">
+                <h3>Spots Shoes</h3>
+                <button>view more</button>
+            </span>
+        </div>        
+        <div id="product-card">
+            <span class="product-image"><img src="https://www.chanel.com/images//t_one/t_fashion9//b_rgb:F7F7F7,e_brightness:-3/q_auto:good,f_autoplus,fl_lossy,dpr_1.1/w_840/pilot-sunglasses-silver-dark-gray-metal-zirconia-metal-zirconia-packshot-default-a71620x02059l4282-9540999118878.jpg" alt="product image"></span>
+            <span class="product-info">
+                <h3>Sunglass</h3>
+                <button>view more</button>
+            </span>
+        </div>        
+        <div id="product-card">
+            <span class="product-image"><img src="https://store.royalenfield.com/media/catalog/product/z/s/zsfvsfsf_22_.jpg?width=550&height=550&canvas=550,550&optimize=high&bg-color=255,255,255&fit=bounds" alt="product image"></span>
+            <span class="product-info">
+                <h3>RE Jacket</h3>
+                <button>view more</button>
+            </span>
+        </div>
+    </main>
+</body>
+</html>
